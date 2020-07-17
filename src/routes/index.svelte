@@ -1,6 +1,6 @@
 <script>
-import Configure from "../components/Configure.svelte";
-
+	import Configure from "../components/Configure.svelte";
+	import { options } from "../stores/options"
 </script>
 <style>
 	h1, figure, p {
@@ -51,4 +51,6 @@ import Configure from "../components/Configure.svelte";
 	</figure>
 	
 	<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+
+	<p>You are using {$options.stage} as your environment.</p>
 </div>

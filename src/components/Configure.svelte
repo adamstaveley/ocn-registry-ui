@@ -1,11 +1,5 @@
 <script>
-    export let options = {
-        stage: '',
-        signer: '',
-        spender: ''
-    }
-
-    let stages = ['test', 'prod', 'custom']
+    import { options, stages } from '../stores/options'
 </script>
 
 <style>
@@ -20,7 +14,7 @@
 
     {#each stages as stage}
         <label class="stage-input">
-            <input type="radio" bind:group={options.stage} value={stage}/>
+            <input type="radio" bind:group={$options.stage} value={stage}/>
             {stage}
         </label>
     {/each}
