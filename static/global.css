@@ -5,6 +5,9 @@
 	--accent-dark: #F4C87C;
 	--accent-light: #FDF5C3;
 	--white: #EBF2F8;
+
+	--monospace: Inconsolata, Consolas, 'DejaVu Sans Mono', 'Liberation Mono',
+	'Ubuntu Mono', Menlo, Monaco, 'Courier New', Courier, monospace;
 }
 
 html, body {
@@ -12,8 +15,7 @@ html, body {
 }
 
 body {
-	font-family: Inconsolata, Consolas, 'DejaVu Sans Mono', 'Liberation Mono',
-		'Ubuntu Mono', Menlo, Monaco, 'Courier New', Courier, monospace;
+	font-family: var(--monospace);
 	font-size: 14px;
 	line-height: 1.5;
 	max-width: 800px;
@@ -38,7 +40,7 @@ a {
 }
 
 code {
-	font-family: menlo, inconsolata, monospace;
+	font-family: var(--moo);
 	font-size: calc(1em - 2px);
 	color: #555;
 	background-color: #f0f0f0;
@@ -60,5 +62,5 @@ code {
 }
 
 .main-block {
-	padding: 2em;
+	padding: 1em;
 }
