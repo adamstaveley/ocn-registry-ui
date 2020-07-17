@@ -1,0 +1,64 @@
+:root {
+	--dark: #0B111D;
+	--light: #1B2537;
+	--shadow: #06090F;
+	--accent-dark: #F4C87C;
+	--accent-light: #FDF5C3;
+	--white: #EBF2F8;
+}
+
+html, body {
+	background-color: var(--light);
+}
+
+body {
+	font-family: Inconsolata, Consolas, 'DejaVu Sans Mono', 'Liberation Mono',
+		'Ubuntu Mono', Menlo, Monaco, 'Courier New', Courier, monospace;
+	font-size: 14px;
+	line-height: 1.5;
+	max-width: 800px;
+	margin: auto;
+	color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0.5em 0 0.5em 0;
+	font-weight: 400;
+	line-height: 1.2;
+	color: var(--accent-dark);
+}
+
+h1 {
+	font-size: 2em;
+}
+
+a {
+	color: var(--accent-dark);
+	text-decoration: none;
+}
+
+code {
+	font-family: menlo, inconsolata, monospace;
+	font-size: calc(1em - 2px);
+	color: #555;
+	background-color: #f0f0f0;
+	padding: 0.2em 0.4em;
+	border-radius: 2px;
+}
+
+@media (min-width: 400px) {
+	body {
+		font-size: 16px;
+	}
+}
+
+.block {
+	background-color: var(--dark);
+	box-shadow: 7.5px 7.5px var(--shadow);
+	padding: 1em 2em;
+	margin: 1em 0;
+}
+
+.main-block {
+	padding: 2em;
+}
