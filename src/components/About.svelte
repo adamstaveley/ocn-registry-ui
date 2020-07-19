@@ -1,10 +1,3 @@
-<svelte:head>
-	<title>About</title>
-</svelte:head>
-
-<style>
-</style>
-
 <div class="block">	
 	<p>
 		This is an unofficial client for the 

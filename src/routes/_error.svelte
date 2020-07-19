@@ -39,4 +39,6 @@
 	{#if dev && error.stack}
 		<pre>{error.stack}</pre>
 	{/if}
+
+	<a href="/">{"<- Home"}</a>
 </div>

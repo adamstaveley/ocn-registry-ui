@@ -40,6 +40,6 @@
 <nav>
 	<ul class="block">
 		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">ocn registry ui</a></li>
-		<li class="nav-help-link"><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
+		<li class="nav-help-link"><a aria-current="{segment === 'help' ? 'page' : undefined}" href="help">help</a></li>
 	</ul>
 </nav>

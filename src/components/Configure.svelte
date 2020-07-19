@@ -1,5 +1,5 @@
 <script>
-    import { options, stages } from '../stores/options'
+    import { options, networks } from '../stores/options'
     let spender = false;
 </script>
 
@@ -29,16 +29,16 @@
     
     <form>
         environment:
-        {#each stages as stage}
-            <label class="stage-input {$options.stage === stage ? 'selected' : ''}">
-                <input type="radio" bind:group={$options.stage} value={stage}/>
-                {stage}
+        {#each networks as network}
+            <label class="stage-input {$options.network === network ? 'selected' : ''}">
+                <input type="radio" bind:group={$options.stage} value={network}/>
+                {network}
             </label>
         {/each}
     </form>
 
     <form>
-        signer
+        signer:
         <input class="signer-input" type="password" bind:value={$options.signer} placeholder="0x..."/>
     </form>
 
