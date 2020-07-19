@@ -1,6 +1,5 @@
 <script>
 	import About from "../components/About.svelte";
-	import Configure from "../components/Configure.svelte";
 	import StageSelector from "../components/NetworkSelector.svelte";
 </script>
 

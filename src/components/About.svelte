@@ -1,6 +1,6 @@
 <div class="block">	
 	<p>
-		This is an unofficial client for the 
+		This is a client for the 
 		<a href="https://shareandcharge.atlassian.net/wiki/spaces/OCN/overview">
 			Open Charging Network</a>'s decentralized address book of participants, 
 			also known as the
