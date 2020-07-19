@@ -4,9 +4,7 @@
 </script>
 
 <style>
-    form {
-        margin: 1em 0;
-    }
+    
     .stage-input {
         cursor: pointer;
     }
@@ -37,19 +35,6 @@
         {/each}
     </form>
 
-    <form>
-        signer:
-        <input class="signer-input" type="password" bind:value={$options.signer} placeholder="0x..."/>
-    </form>
-
-    <form>
-        <label>
-            spender?
-            <input type="checkbox" bind:checked={spender}/>
-        </label>
-        {#if spender || $options.spender}
-            <input class="signer-input" type="password" bind:value={$options.spender} placeholder="0x..."/>
-        {/if}
-    </form>
+    
 
 </div>

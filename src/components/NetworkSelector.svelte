@@ -9,7 +9,7 @@
 </style>
 
 <div class="block">
-    <p>Select an environment from below to get started:
+    <p>Select an environment below to get started:
     </p>
 
     <ul>
