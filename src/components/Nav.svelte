@@ -26,7 +26,7 @@
 	}
 
 	a {
-		text-decoration: none;
+		/* text-decoration: none; */
 		/* padding: 1em 0.5em; */
 		display: block;
 		color: var(--white);

@@ -5,33 +5,41 @@
         return {
             operator: { 
                 min: `${node.operator.slice(0, 7)}...${node.operator.slice(36)}`,
-                full: node.operator
+                explorer: `https://volta-explorer.energyweb.org/address/${node.operator}`
             },
             url: node.url
         }
     })
 </script>
 
+<style>
+    th {
+        text-align: left;
+    }
+    .url {
+        padding-left: 1em;
+    }
+</style>
+
 <div class="block">
 
-    <h4>Nodes</h4>
     {#if nodes}
         <table>
             <thead>
                 <tr>
                     <th>Operator</th>
-                    <th>URL</th>
+                    <th class="url">URL</th>
                 </tr>
             </thead>
             <tbody>
                 {#each nodesProcessed as node}
                     <tr>
                         <td>
-                            <a href={`https://volta-explorer.energyweb.org/address/${node.operator.full}`}>
+                            <a href={node.operator.explorer}>
                                 {node.operator.min}
                             </a>
                         </td>
-                        <td>{node.url}</td>
+                        <td class="url">{node.url}</td>
                     </tr>
                 {/each}
             </tbody>
