@@ -6,6 +6,8 @@ import babel from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
+import json from '@rollup/plugin-json'
+import polyfills from 'rollup-plugin-node-polyfills'
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -28,10 +30,13 @@ export default {
 				emitCss: true
 			}),
 			resolve({
+				preferBuiltins: true,
 				browser: true,
 				dedupe: ['svelte']
 			}),
 			commonjs(),
+			polyfills(),
+			json(),
 
 			legacy && babel({
 				extensions: ['.js', '.mjs', '.html', '.svelte'],
