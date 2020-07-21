@@ -9,8 +9,14 @@
     let nodes
 
     onMount(async () => {
-        const registry = new Registry('volta')
-        nodes = await registry.getAllNodes()
+        const sessionNodes = sessionStorage.getItem('nodes')
+        if (sessionNodes) {
+            nodes = JSON.parse(sessionNodes)
+        } else {
+            const registry = new Registry('volta')
+            nodes = await registry.getAllNodes()
+            sessionStorage.setItem('nodes', JSON.stringify(nodes))
+        }
     })
 </script>
 
