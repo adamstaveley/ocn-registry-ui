@@ -5,7 +5,7 @@
 <style>
 </style>
 
-<div class="block">	
+<!-- <div class="block">	
 	<h4>What are signers and spenders?</h4>
 	<p>A "signer" is any valid Ethereum private key used to modify
 		the state of the smart contracts. The name comes from the signatures
@@ -24,7 +24,7 @@
 		This means that multiple users can change the state of the registry smart
 		contracts without all needing to obtain the network's utility token first.
 	</p>
-</div>
+</div> -->
 
 <div class="block">
 	<h4>Where is the permissions contract on the prod network?</h4>

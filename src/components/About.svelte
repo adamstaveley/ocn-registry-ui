@@ -7,17 +7,20 @@
 		<a href="https://bitbucket.org/shareandcharge/ocn-registry">OCN Registry</a>.
 	</p>
 
-	<p>There is no backend. You talk directly
-		to the OCN Registry smart contracts; your private key is not stored 
-		on a centralized system anywhere. 
+	<p>There is no backend. You communicate with the OCN Registry smart contracts
+		directly.
 	</p>
 
-	<p>However, it is up to you to keep your private key secure. Right now
+	<p>Right now you can only view data. Further updates will add the ability to 
+		modify state in the smart contracts.
+	</p>
+
+	<!-- <p>However, it is up to you to keep your private key secure. Right now
 		the client does not support metamask but this is planned for the 
 		future.
-	</p>
+	</p> -->
 
 	<p>Don't trust this deployment? If you prefer, you can 
-		<a href="https://github.com/adamstaveley">check out the source</a> 
-		and run it yourself.</p>
+		<a href="https://github.com/adamstaveley/ocn-registry-ui">check out the source</a> 
+		and follow the instructions to run it yourself.</p>
 </div>

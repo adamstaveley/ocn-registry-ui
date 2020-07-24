@@ -1,7 +1,12 @@
 <script>
-    import { options } from "../stores/options"
+    import { writable } from 'svelte/store'
 
     let spender;
+
+    const options = writable({
+        signer: '',
+        spender: ''
+    })
 </script>
 
 <style>

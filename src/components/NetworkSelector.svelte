@@ -1,5 +1,5 @@
 <script>
-    import { networks } from "../stores/options"
+    import { networks } from "../data/networks"
 </script>
 
 <style>
@@ -15,7 +15,7 @@
     <ul>
         {#each networks as network}
             <li>
-                <a href="{network}">{network}</a>
+                <a href="{network.name}">{network.name}</a>
             </li>
         {/each}
     </ul>

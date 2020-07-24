@@ -34,10 +34,10 @@
 <div class="block">
 	<h1>{status}</h1>
 	
-	<p>{error.message}</p>
-	
 	{#if dev && error.stack}
 		<pre>{error.stack}</pre>
+	{:else}
+		<p>{error.message}</p>
 	{/if}
 
 	<a href="/">{"<- Home"}</a>
