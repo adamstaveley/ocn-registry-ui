@@ -47,12 +47,17 @@
 		/* float: left; */
 		line-height: 1.5;
 		padding: 1px 0;
+		/* margin-left: 2px; */
 	}
 	li:hover {
 		color: var(--accent-dark);
 	}
 	.active {
 		background-color: var(--accent-dark);
+		color: var(--dark);
+		padding-left: 5px 0;
+	}
+	.active:hover {
 		color: var(--dark);
 	}
 </style>
