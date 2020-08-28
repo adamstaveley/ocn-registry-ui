@@ -11,6 +11,7 @@
     }
 </style>
 
+{#if nodes && nodes.length > 0}
 <table>
     <thead>
         <tr>
@@ -31,3 +32,8 @@
         {/each}
     </tbody>
 </table>
+{:else}
+<div class="contract-data-help-text">
+	<p>No data found.</p>
+</div>
+{/if}

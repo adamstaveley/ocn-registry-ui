@@ -61,6 +61,6 @@ code {
 	margin: 1em 0;
 }
 
-table thead td {
-	border-bottom: var(--white) solid 1px;
+div.contract-data-help-text {
+	margin-left: 1.5rem;
 }

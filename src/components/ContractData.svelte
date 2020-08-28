@@ -85,19 +85,25 @@
 				{#if nodes}
 					<NodesList nodes={nodesProcessed} />
 				{:else}
-					<p>Getting node data...</p>
+					<div class="contract-data-help-text">
+						<p>Getting node data...</p>
+					</div>
 				{/if}
 			{:else if selected === 'parties'}
 				{#if parties}
 					<PartiesList {parties} />
 				{:else}
-					<p>Getting party data...</p>
+					<div class="contract-data-help-text">
+						<p>Getting party data...</p>
+					</div>
 				{/if}
 			{:else if selected === 'services'}
 				{#if services}
 					<ServicesList {services} />
 				{:else}
-					<p>Getting service data...</p>
+					<div class="contract-data-help-text">
+						<p>Getting service data...</p>
+					</div>
 				{/if}
 			{/if}
 
