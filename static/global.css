@@ -60,3 +60,7 @@ code {
 	padding: 1em 2em;
 	margin: 1em 0;
 }
+
+table thead td {
+	border-bottom: var(--white) solid 1px;
+}

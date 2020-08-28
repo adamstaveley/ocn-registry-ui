@@ -1,6 +1,10 @@
 <script>
 	export let parties;
-	console.log(parties);
+	parties = parties.sort((a, b) => a.countryCode > b.countryCode)
+
+	const displayNodeInfo = (event, node) => {
+		console.log('mouseover', event.x, event.y, 'on', node)
+	}
 </script>
 
 <style>
@@ -29,23 +33,19 @@
 <table>
 	<thead>
 		<tr>
-			<th class="firstCol">Node</th>
-			<th>Country</th>
-			<th>PartyId</th>
-			<th>Role</th>
+			<th class="firstCol">Credentials</th>
+			<th>Roles</th>
+			<th>Node</th>
 		</tr>
 	</thead>
 	<tbody>
 		{#each parties as party}
 			<tr>
-				<td class="firstCol">
-					<a href={party.node.url}>
-						{party.node.operator.slice(0, 7)}...{party.node.operator.slice(36)}
-					</a>
-				</td>
-				<td>{party.countryCode}</td>
-				<td>{party.partyId}</td>
+				<td class="firstCol">{party.countryCode}:{party.partyId}</td>
 				<td>{party.roles}</td>
+				<td onmouseover={(event) => displayNodeInfo(event, party.node)}>
+					{party.node.operator.slice(0, 7)}...{party.node.operator.slice(36)}
+				</td>
 			</tr>
 		{/each}
 	</tbody>
