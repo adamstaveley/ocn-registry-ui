@@ -1,26 +1,8 @@
-# sapper-template
+# OCN Registry UI
 
-The default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack.
+Simple web client for the Open Charging Network Registry.
 
-
-## Getting started
-
-
-### Using `degit`
-
-[`degit`](https://github.com/Rich-Harris/degit) is a scaffolding tool that lets you create a directory from a branch in a repository. Use either the `rollup` or `webpack` branch in `sapper-template`:
-
-```bash
-# for Rollup
-npx degit "sveltejs/sapper-template#rollup" my-app
-# for webpack
-npx degit "sveltejs/sapper-template#webpack" my-app
-```
-
-
-### Using GitHub templates
-
-Alternatively, you can use GitHub's template feature with the [sapper-template-rollup](https://github.com/sveltejs/sapper-template-rollup) or [sapper-template-webpack](https://github.com/sveltejs/sapper-template-webpack) repositories.
+Built using the default [Sapper](https://github.com/sveltejs/sapper) template.
 
 
 ### Running the project
