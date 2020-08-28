@@ -1,9 +1,14 @@
 <script>
+	import tippy from "sveltejs-tippy";
+
 	export let parties;
 	parties = parties.sort((a, b) => a.countryCode > b.countryCode)
 
-	const displayNodeInfo = (event, node) => {
-		console.log('mouseover', event.x, event.y, 'on', node)
+	const getNodeTooltipProps = (node) => {
+		return {
+			content: node.url,
+			placement: 'bottom-start'
+		}
 	}
 </script>
 
@@ -20,15 +25,13 @@
 	.firstCol {
 		padding-left: 0px !important;
 	}
+	:global(.tooltip) {
+		background-color: var(--dark);
+	}
+	.node {
+		color: var(--accent-dark);
+	}
 </style>
-
-<!-- <ul>
-	{#each parties as party}
-		<li>
-			{party.countryCode} {party.partyId} {party.roles} {party.node.operator}
-		</li>
-	{/each}
-</ul> -->
 
 <table>
 	<thead>
@@ -43,7 +46,7 @@
 			<tr>
 				<td class="firstCol">{party.countryCode}:{party.partyId}</td>
 				<td>{party.roles}</td>
-				<td onmouseover={(event) => displayNodeInfo(event, party.node)}>
+				<td class="node" use:tippy={getNodeTooltipProps(party.node)}>
 					{party.node.operator.slice(0, 7)}...{party.node.operator.slice(36)}
 				</td>
 			</tr>
